@@ -1,0 +1,38 @@
+# Metadata defining the behaviour and requirements for this engine
+
+# expected fields in the configuration file for this engine
+configuration:
+    checks:
+        type: list
+        description: list of dictionaries. This list should contains one entry for every check.
+        allows_empty: True
+        values: 
+          type: dict
+          items:
+              type: { type: str }
+              blockPublish: { type: bool }
+              source: {type: str}
+
+
+
+
+
+# the Shotgun fields that this engine needs in order to operate correctly
+requires_shotgun_fields:
+        
+        
+# this app works only in maya
+supported_engines: tk-maya
+
+
+# More verbose description of this item 
+display_name: "Sanity Check"
+description: "Sanity Check App"
+
+# Required minimum versions for this item to run
+requires_shotgun_version:
+requires_core_version: "v0.12.6"
+requires_engine_version:
+
+# the frameworks required to run this app
+frameworks:

@@ -1,4 +1,4 @@
-tk-multi-sanitycheck
-====================
+tk-mutli-sanityCHeck
+===================
 
-tk-multi-sanitycheck
+Sanity check tank app
